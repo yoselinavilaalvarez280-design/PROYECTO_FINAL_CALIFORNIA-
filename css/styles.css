@@ -1,0 +1,46 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f2f2f2;
+}
+
+/* MENÚ */
+.menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* PANTALLAS */
+.pantalla {
+  display: none;
+  padding: 20px;
+  animation: fade 0.5s;
+}
+
+.activa {
+  display: block;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* ANIMACIÓN */
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
